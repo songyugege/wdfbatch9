@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Function</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		// User Define Function
+		// 1.Regular Function
+				// (i)manual function
+				// (ii)parameter function
+				// 	(a)single parameter function
+				// 	(b)multi parameter function
+		// 2.Arrow Function
+				// (i)manual function
+				// (ii)parameter function
+				// 	(a)single parameter function
+				// 	(b)multi parameter function
+		// 3.Generator Function
+				// yield
+				// next()
+
+
+		// function name(){
+		// 	code to be executed;
+		// }
+
+		// name(); function invoke / function recall
+
+
+		// (i)manual function
+
+		function greet(){
+			console.log('Hello Nyanmar');
+			console.log('Hello Thailand');
+			console.log('Hlello Srilanka');
+		}
+
+		greet();
+		greet();
+		greet();
+
+
+		hello(); //hello mandalay
+
+		function hello(){
+			console.log('hello yangon');
+		}
+
+		hello(); //hello mandalay
+
+		function hello(){
+			console.log("hello yangon");
+		}
+
+		hello(); //hello mandalay
+
+
+		function funone(){
+			console.log('i am function one');
+		}
+
+		function funtwo(){
+			funone();
+			console.log('i am function two');
+			funone();
+		}
+
+
+		function funthree(){
+			funtwo();
+			funone();
+		}
+
+		funthree(); // 1 2 1 1
+
+		// ---------------------------------------------------------------------
+
+
+		// RETurn
+
+		function funfour(){
+			console.log(4);
+		}
+
+		function funfive(){
+			console.log(5);
+		}
+
+		funfour();
+		funfive();
+
+
+		function funsix(){
+			const num4 = funfour();
+			const num5 = funfive();
+
+			// console.log(num4); undefined
+			// console.log(num5); undefined
+
+			const total = num4+num5;
+			console.log(total);
+		}
+
+		funsix(); //NaN
+
+
+		var x = 10;
+		console.log(x);
+
+
+		function funseven(){
+			// return 7;
+			// return 8;
+			// return 9;
+
+			var p = 50;
+			var q = 100;
+
+			if(p > q){
+				return true;
+			}else{
+				return false;
+			}
+
+		}
+
+		console.log(funseven()); //7
+
+
+
+		function funeight(){
+			// const msg1 = "hi";
+			// const msg2 = "nay kaung lar ?";
+			// const msg3 = "sarr pee pee lar ?";
+			// const msg4 = "mee lar lar ?";
+
+			// return "block";
+
+
+			// do
+			// const num8 = 800;
+			// return num8;
+
+			// don't
+			// return var num8 = 8000; // error
+
+			// do 
+			var num8;
+			return num8=80000;
+
+		}
+
+		console.log(funeight());
+
+
+		function funnine(){
+			return 90;
+		}
+
+		function funten(){
+			const x = 100;
+			return x;
+		}
+
+		console.log(funnine());
+		console.log(funten());
+
+
+		function funeleven(){
+			const num1 = funnine();
+			const num2 = funten();
+
+			// console.log(num1); //90
+			// console.log(num2); //100
+
+			const total = num1+num2;
+			console.log(total);
+		}
+
+		funeleven(); //190
+
+
+		// -------------------------------------------------------------------
+
+		// (ii)parameter function
+				// (a)single function
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

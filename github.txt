@@ -1,0 +1,61 @@
+git --version 
+
+one time 
+git config --global user.name "Phoo Pwint Soe"
+git config user.name
+git config --global user.name "Phoo Pwint"
+
+
+git config --global user.email "phoopwintsoe0502@gmail.com"
+
+git config user.email 
+
+
+
+==>Connect by SSH (secure shell protocol)
+
+ssh-keygen -t rsa (use .pub)
+
+start wit ssh-rsa 
+
+
+-keygen use yin 5 to 10mins char 
+-delete p mha use
+
+
+==>Check Connection
+
+ssh -T git@github.com
+
+--------------------------------------------------------
+
+Project 1 Repository 1
+
+==>Git Intialize to project folder
+
+git init (always)
+
+d folder ko project nk repository connect
+==>Connect project folder to repository
+
+git remote add origin  git@github.com:songyugege/pttproject.git
+
+
+==>Check repository URL
+
+git remote -v 
+
+---------------------------------------------------------------------
+
+==>Always 
+git status
+git add * (all) or git add -A (git add all) project mhr shi tk file twe htae tr
+
+git status
+
+git commit -m "my first project" 
+
+git push -u origin master
+
+git clone 
+

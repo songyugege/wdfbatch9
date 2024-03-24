@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scope</title>
+</head>
+<body>
+
+
+	<script type="text/javascript">
+		
+		// Object
+
+		const customers ={
+			fullname: "zayar kyaw",
+			age: 30,
+			phone: "0912345"
+		};
+
+		console.log(customers);
+		console.log(customers.fullname);
+		console.log(customers.age);
+		console.log(customers.phone);
+
+		customers.city = "Mandalay";
+		console.log(customers);
+
+		customers.fullname = "Zayar Thaw";
+		console.log(customers);
+
+		// ERROR
+
+		// customers = {
+		// 	citizen s: "Myanmar"
+		// };
+		// console.log(customers)
+
+
+
+		let members = {
+			fullname : "su su",
+			age:18,
+			phone:"0956789"
+		};
+
+		console.log(members);
+		console.log(members.fullname,);
+
+		members.city = "Mandalay";
+		console.log(members);
+
+		members.age = 20;
+		console.log(members);
+
+
+		members = {
+			citizen : "Mandalay"
+		};
+
+		console.log(members);
+
+		var students = {
+			fullname: "aung tun tun",
+			age:16,
+			phone:"091111"
+		};
+
+		console.log(students);
+		console.log(students.fullname);
+
+
+
+		students.city = "Bago";
+		console.log(students);
+
+
+		students.age = 18;
+		console.log(students);
+
+
+		students = {
+			fullname: "aung kyaw kyaw"
+		};
+
+		console.log(students);
+		console.log(students.city); //undefined
+
+ 	//--------------------------------------------------------------------
+
+
+		// = Array
+
+		const arrcolors = ['blue','red','green'];
+		console.log(arrcolors);
+
+		arrcolors[0] = "violet";
+		console.log(arrcolors);
+
+		arrcolors[3] = "white";
+		console.log(arrcolors);
+
+		arrcolors.push("gold");
+		console.log(arrcolors);
+
+		// ERROR
+		// arrcolors = ["black","white":"grey"];
+		// console.log(arrcolors);
+
+
+		let arrgirls = ["su su","aye aye","chan chan","soe soe"];
+		console.log(arrgirls);
+
+		arrgirls[0] = "phyu phyu";
+		console.log(arrgirls);
+
+		arrgirls[4] = "hla hla";
+		console.log(arrgirls)
+
+		arrgirls.push("pa pa");
+		console.log(arrgirls);
+
+		arrgirls = ["yu yu","nu nu","lu lu"];
+		console.log(arrgirls);
+
+
+
+		var arrboys = ["aung aung","maung maung","naung naung","kyaung kyaung"];
+		console.log(arrboys);
+
+		arrboys[0] = "kyaw kyaw";
+		console.log(arrboys);
+
+		arrboys[4] = "zaw zaw";
+		console.log(arrboys);
+
+		arrboys.push("naw naw");
+		console.log(arrboys);
+
+		arrboys = ["tun tun","thura","yata"];
+		console.log(arrboys);
+
+	//---------------------------------------------------------------------------------------
+
+
+		// Function
+
+
+		const number1 = 10;
+		let number2 = 20;
+		var number3 = 30;
+
+		function funone(){
+			console.log(number1+number2+number3);
+		}
+
+		funone();
+
+		function funtwo(){
+			const x = 100;
+			let y = 200;
+			var z = 300;
+			console.log(x+y+z);
+		}
+
+		funtwo();
+
+		console.log("Global Scope Variable number1 = ",number1);
+		console.log("Global Scope Variable number2 = ",number2);
+		console.log("Global Scope Variable number3 = ",number3);
+
+
+
+		// console.log("Function Scope Variable x by const = ", x);
+		// console.log("Function Scope Variable y by let = ", y);
+		// console.log("Function Scope Variable z by const = ", z);
+
+
+		const p = 1;
+		let q = 2;
+		var r = 3;
+
+		function funthree(){
+
+			// p = 10;
+			q = 20;
+			r = 30;
+
+				// console.log("From function , p value is by const = ", p);
+			console.log("From function , q value is by let = ", q);
+			console.log("From function , r value is by const = ", r);
+		}
+
+		
+		funthree();
+		// console.log("From outside , p value is by let = ", p); //10
+		console.log("From outside , q value is by let = ", q); //20
+		
+		console.log("From outside , r value is by let = ", r); //30
+
+
+
+		const a = 10;
+		let b = 20;
+		var c = 30;
+
+		function funfour(){
+			const a = 100;
+			let b = 200;
+			var c = 300;
+
+			console.log("From function , a value is by const = ", a);
+			console.log("From function , b value is by let = ", b);
+			console.log("From function , c value is by const = ", c);
+		}
+
+		funfour();
+		console.log("From outside , a value is by let = ", a); //10
+		console.log("From outside , b value is by let = ", b); //20
+		
+		console.log("From outside , c value is by let = ", c); //30
+
+
+
+
+
+	</script>
+</body>
+</html>

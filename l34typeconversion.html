@@ -1,0 +1,190 @@
+<!DOCTYPE hrml>
+<html>
+<head>
+	<title>Type Conversion</title>
+</head>
+<body>
+	
+
+	<script type="text/javascript">
+		
+
+		//string (character array)
+		let val;
+
+		val = "aung aung";
+
+		console.log(val); //aung aung
+		console.log(typeof val); //string
+		console.log(val.length); //9
+
+
+		//Number to sting
+		// val = "20";
+		// val = '20';
+		// val = `20`;
+		// val = String(20);
+
+		// val = "20"+"20"; //2030
+		val = String(20+30); // 50
+		console.log(val);
+		console.log(typeof (val)); //string
+		console.log(val.length); //2
+
+
+		// Boolean to String
+		val = "true";
+		console.log(val);
+		console.log(typeof (val)); //string
+		console.log(val.length); //4
+
+
+
+		// Date to String
+
+		val = "new Date()"; //new Date()
+		val = String(new Date());
+		console.log(val); //Wed Jul 26 2023 20:08:16 GMT+0630 (Myanmar Time)
+		console.log(typeof (val)); //string
+		console.log(val.length); //48
+
+
+
+		// Array to String
+
+		val = '[1,2,3,4,5]'; //[1,2,3,4,5]
+		val = String([1,2,3,4,5]);
+		console.log(val); //1,2,3,4,5
+		console.log(typeof (val)); //string
+		console.log(val.length); //9
+
+
+// --------------------------------------------------------
+
+		//String to Number
+
+		val = "20";
+		// val = Number(val);
+		val = +val;
+		console.log(val); //20
+		console.log(typeof (val)); //number
+		console.log(val.length); //undefined
+
+
+		// val = Number(prompt("Enter First Name"));
+		// val = +prompt("Enter First Name");
+		console.log(val); //
+		console.log(typeof (val)); //number
+		console.log(val.length); //undefined	
+
+
+		// val = Number('aung aung'); //NaN = Not a Number
+		// val = +"aung aung"; //NaN = Not a Number
+		val = Number([1,2,3,4,5]); //NaN = Not a Number
+		console.log(val); //
+		console.log(typeof (val)); //number
+		console.log(val.length); //undefined
+
+
+		val = 10+"33.34";
+		console.log(val); //1033.34
+		console.log(typeof(val)); //string
+
+		val = 10 + +"33.34";
+		console.log(val); //43.34
+		console.log(typeof(val)); //number
+
+		val = 123.456789;
+		console.log(val); //123.456789
+		console.log(val.toFixed(3));
+		console.log(typeof (val)); //number
+		console.log(val.length); //undefined
+
+		val = 123;
+		console.log(val); //123
+		console.log(val.toFixed(2)); //123.00
+		console.log(typeof (val)); //number
+		console.log(val.length); //undefined
+
+
+
+		val = "50.789";
+		// val = Number(val);//50.789
+		val = parseInt(val);
+		console.log(val); //50
+		console.log(val.toFixed(2)); //50.00
+		console.log(typeof (val)); //number
+		console.log(val.length); //undefined
+
+
+		val = "50.789"
+		val = parseFloat(val);
+		console.log(val); //50.789
+		console.log(val.toFixed(2)); //50.79
+		console.log(typeof (val)); //number
+		console.log(val.length); //undefined
+
+
+		val = "50.789"
+		val = parseFloat(val);
+		console.log(val); //50.789
+		console.log(typeof (val)); //number
+		console.log(val.length); //undefined
+		console.log(val.toPrecision(2)); //51
+		console.log(val.toPrecision(4)); //50.79
+
+
+		// Boolean to Number
+
+		// val = NUmber(true); //1
+		val = Number(false); //0
+		val = parseFloat(val);
+		console.log(val); 
+		console.log(val.toFixed(2)); //0.00
+		console.log(typeof (val)); //number
+		console.log(val.length); //undefined
+
+
+
+
+		val = "Honey Nway Oo";
+		val = Array.from(val);
+		console.log(val);
+		console.log(typeof (val)); //object
+		console.log(val.length); //13
+
+
+
+		// Note :: number boolean object can't convert to array
+
+		// val = 50;
+		// val = Array.from(val);
+
+
+		// val = true;
+		// val = Array.from(val);
+
+		val = {
+			music:'rock',
+			sport:'basketball'
+		};
+		// val = Array.from(val);
+
+		console.log(val);
+		console.log(typeof (val)); //object
+		console.log(val.length); //0
+
+
+
+
+
+
+
+
+
+
+	</script>
+
+</body>
+</html>
+

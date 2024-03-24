@@ -1,0 +1,44 @@
+=>Github
+
+=>One times 
+after git install 
+git 
+git --version               (git version 2.39.2)
+
+git config --global user.name "Phoo Pwint Soe"
+git config user.name 
+
+git config --global user.name "phoopwintsoe0502@gmail.com"
+git config user.email
+
+=>SSH ( Secure Shell )
+ssh-keygen
+
+ssh -T git@github.com                           (we can check ssh is successful or not by this comment)
+
+
+
+
+=>github
+git init    (1 project 1 time)
+git remote add origin "git@github.com:songyugege/pttsoftware.git"
+
+
+
+(as to you)
+git status
+git add -A                          (git add *)
+git status 
+git commit -m "my first project"
+git push -u origin master
+
+
+
+=>Update 
+git status 
+git add * 
+git status 
+git commit -m "title modified 12/03"
+git push -u origin master
+
+
