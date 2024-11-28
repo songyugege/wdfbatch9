@@ -1,0 +1,22 @@
+Font Integration
+
+
+
+
+/*(i)Local Machine Integration*/
+
+/*body{
+	font-family: Arial;
+}*/
+
+.p1{
+	font-family: Arial;
+}
+
+.p2{
+	font-family: "Time New Roman";
+}
+
+.p3{
+	font-family: Century,Arial,"Time New Roman";
+}
